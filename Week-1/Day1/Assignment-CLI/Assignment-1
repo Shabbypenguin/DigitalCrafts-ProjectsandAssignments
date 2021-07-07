@@ -1,0 +1,23 @@
+#!/bin/bash
+WorkingFolder=($HOME"/Documents/Projects/Week-1/Day1/Assignment-CLI/")
+mkdir -p $WorkingFolder
+if [[ -d $WorkingFolder'Version-1' && -d $WorkingFolder'Version-2' ]]; then
+	echo "Files and folders already exist, lets wipe them out to start fresh"
+	rm -rf $WorkingFolder"Version-1"
+	rm -rf $WorkingFolder"Version-2"
+fi
+
+echo "Lets make your project!"
+mkdir -p $WorkingFolder"Version-1"
+mkdir -p $WorkingFolder"Version-2"
+
+filenames=("index.html" "contact-us.html" "services.html" "about-us.html" "index-2.html" "services-2.html")
+for i in ${filenames[*]}; do
+	touch $WorkingFolder"Version-1"/$i
+done
+
+mv $WorkingFolder"Version-1"/*2.html $WorkingFolder"Version-2"/
+
+echo "All Finished!"
+open $WorkingFolder
+exit 
