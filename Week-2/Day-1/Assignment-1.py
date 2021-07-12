@@ -20,7 +20,7 @@ while True:
 		location = input("")
 		print("What would you like to call this list?")
 		list_tite = input("")
-		shopping_list = List_Maker(location, list_tite)
+		location = List_Maker(location, list_tite)
 		list_index+=1
 		print(shopping_list)
 	elif menu_input == "2":
