@@ -10,6 +10,10 @@ class Listmaker:
 		self.item_list = []
 		
 	def view_list(list_index, lists_of_lists, i):
+		for store in range(0, len(lists_of_lists)):
+			print("What list would you like to view?\n\n")
+			print(f"{i} {lists_of_lists[i].store_name} located at {lists_of_lists[i].location}")
+		
 		if list_index == 0:
 			print("No lists found")
 		else:

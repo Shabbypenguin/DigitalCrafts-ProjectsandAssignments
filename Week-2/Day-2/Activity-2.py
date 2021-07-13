@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-class Calculator:
+
+import unittest
+import random
+import operator
+
+class CalculatorTests(unittest.TestCase):
 	def __init__(self, input_1, input_2, operator):
 		self.number1 = input_1
 		self.number2 = input_2
@@ -7,30 +12,22 @@ class Calculator:
 		self.total = 0
 		
 	def solve(self):
-		self.total = eval(self.number1 + self.operator + self.number2)
+		self.total = self.operator(self.number1, self.number2)
+		print(self.total)
+		print("test")
+		self.assertEqual(calculation.total, calculation.total)
 
 
 while True:
-
-	try:
-		first_number = input("Enter your first value: ")
-	except:
-		print("Please enter an integer.")
-	try:
-		second_number = input("Enter your second value: ")
-	except:
-		print("Please enter an integer.")
-	print("If you would like to quit, type q")
-	operation = input("Enter your what operation you want to use (+, -, *, /): ")
+	first_number = random.randint(1, 999)
+	second_number = random.randint(1, 999)
+	operating_choices = [operator.add, operator.sub, operator.mul, operator.truediv]
+	random_operator = random.choice(operating_choices)
+	print(random_operator)
+	print(first_number)
+	print(second_number)
 	
-	
-		
-	if (operation.lower() == "q"):
-		exit()
-	else:
-		calulation = Calculator(first_number, second_number, operation)
-		try:
-			calulation.solve()
-		except:
-			print("invalid math problem")
-		print(calulation.total)
+	calculation = Calculator(first_number, second_number, random_operator)
+	calculation.solve()
+	input("")
+	print(calculation.total)

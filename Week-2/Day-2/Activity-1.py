@@ -4,7 +4,7 @@ def input_number():
 	try:
 		number = int(input("Enter number: "))
 		input_number()
-	except:
+	except ValueError:
 		print("Not a number, please try again.")
 		input_number()
 		

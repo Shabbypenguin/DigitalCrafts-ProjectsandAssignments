@@ -3,25 +3,29 @@ first_number = None
 second_number = None
 operation = None
 
-def addition(value1, value2):
-	print("Add some numbers")
-	sum = value1 + value2
-	return sum
+class Calculator():
+	def def __init__(self):
+		<#code#>
+		
+	def addition(value1, value2):
+		print("Add some numbers")
+		sum = value1 + value2
+		return sum
 
-def subtraction(value1, value2):
-	print("Subtract some numbers")
-	difference = value1 - value2
-	return difference
-
-def multiplcation(value1, value2):
-	print("Multiply some numbers")
-	product = value1 * value2
-	return product
-
-def division(value1, value2):
-	print("Divide some numbers")
-	remainder = value1 / value2
-	return remainder
+	def subtraction(value1, value2):
+		print("Subtract some numbers")
+		difference = value1 - value2
+		return difference
+	
+	def multiplcation(value1, value2):
+		print("Multiply some numbers")
+		product = value1 * value2
+		return product
+	
+	def division(value1, value2):
+		print("Divide some numbers")
+		remainder = value1 / value2
+		return remainder
 
 total = 0
 
