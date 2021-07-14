@@ -1,0 +1,74 @@
+[
+  {
+    "table_number": 1,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 2,
+    "occupied": true,
+    "start_time": "16:21",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 3,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 4,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 5,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 6,
+    "occupied": true,
+    "start_time": "16:24",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 7,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 8,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 9,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 10,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 11,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  },
+  {
+    "table_number": 12,
+    "occupied": false,
+    "start_time": "15:12",
+    "end_time": "15:12"
+  }
+]
