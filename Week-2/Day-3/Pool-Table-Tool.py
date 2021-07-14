@@ -7,6 +7,10 @@ file_name = "Pool_tables.json"
 with open(file_name) as json_in:
 	pool_tables = json.load(json_in)
 	
+def time_to_num(time_str):
+	hh, mm , ss = map(int, time_str.split(':'))
+	return ss + 60*(mm + 60*hh)
+	
 while True:
 	print("\nHello to Bonanza Billards!")
 	print("Would you like reserve a table, or close out your play time?")
@@ -37,6 +41,11 @@ while True:
 		PoolTables.clear_table(pool_tables, table_choice)
 		time_spent = PoolTables.calculate_cost(pool_tables, table_choice)
 		print(f"You spent {time_spent} minutes at {table_choice}")
+		cost = time_spent/60*30
+		print(f"That means you owe ${cost}")
+		print("Thank you for using our services!")
+		pool_tables[table_choice]['occupied']= False
+		
 	
 	
 		

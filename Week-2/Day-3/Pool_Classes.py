@@ -19,7 +19,9 @@ class PoolTables:
 		self[table_number]['end_time'] = datetime.now().strftime("%H:%M")
 		
 	def calculate_cost(self, table_number):
-		return datetime.strptime(self[table_number]['end_time'], "%H:%M") - datetime.strptime(self[table_number]['start_time'], "%H:%M")
+		time_delta = datetime.strptime(self[table_number]['end_time'], "%H:%M") - datetime.strptime(self[table_number]['start_time'], "%H:%M")
+		time_spent = (time_delta.total_seconds()/60)
+		return int(time_spent)
 	
 	def available_tables(self, table_number):
 		if self[table_number]['occupied']==False:
