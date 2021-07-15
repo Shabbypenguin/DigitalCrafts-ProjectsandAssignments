@@ -7,8 +7,6 @@ while True:
 	print("What is your name?")
 	user_name =input("")
 	if user_name.lower() == "q":
-		with open("user_info.json", "w") as file:
-			json.dump(users, file, indent=2)
 		exit()
 	print("What is your age")
 	try:
@@ -17,3 +15,5 @@ while True:
 		print("Whoops, age is a number, please try again.")
 	user_info = {"name" : user_name, "age" : user_age }
 	users.append(user_info)
+	with open("user_info.json", "w") as file:
+		json.dump(users, file, indent=2)
