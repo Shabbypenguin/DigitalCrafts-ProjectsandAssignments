@@ -39,17 +39,17 @@ while True:
 			print("\n")
 		elif menu_choice == "3":
 			print("Which table where you on? ")
-			try:
-				table_choice = int(input(""))
-				PoolTables.clear_table(pool_tables, table_choice)
-				time_spent = PoolTables.calculate_cost(pool_tables, table_choice)
-				print(f"You spent {time_spent} minutes at {table_choice}")
-				cost = time_spent/60*30
-				print(f"That means you owe ${cost}")
-				print("Thank you for using our services!")
-				pool_tables[table_choice]['occupied']= False
-			except:
-				print("Whoops, you entered an invalid choice! Please try again.")
+		try:
+			table_choice = int(input(""))
+			PoolTables.clear_table(pool_tables, table_choice)
+			time_spent = PoolTables.calculate_cost(pool_tables, table_choice)
+			print(f"You spent {time_spent} minutes at {table_choice}")
+			cost = time_spent/60*30
+			print(f"That means you owe ${cost}")
+			print("Thank you for using our services!")
+			pool_tables[table_choice]['occupied']= False
+		except:
+			print("Whoops, you entered an invalid choice! Please try again.")
 	except:
 		print("The program exited, so lets save our json")
 		with open(file_name, 'w') as json_output:
