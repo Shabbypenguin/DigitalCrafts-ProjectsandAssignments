@@ -7,10 +7,6 @@ file_name = "Pool_tables.json"
 with open(file_name) as json_in:
 	pool_tables = json.load(json_in)
 	
-def time_to_num(time_str):
-	hh, mm , ss = map(int, time_str.split(':'))
-	return ss + 60*(mm + 60*hh)
-	
 while True:
 	try:
 		print("\nHello to Bonanza Billards!")
