@@ -1,0 +1,8 @@
+body{
+  background-color: yellow;
+  font-size: 24px;
+  font-style: italic;
+}
+li:nth-of-type(3){
+  background: green;
+}

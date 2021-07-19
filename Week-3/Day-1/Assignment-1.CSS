@@ -1,0 +1,37 @@
+* {
+    cursor: url("http://safir85.ucoz.com/24work-blogspot/mouse-cursor/COOL_BLUE_OUTER_GLOW_POINTER-www.24work.blogspot.c.cur"), progress;
+}
+.sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: url("buddy.gif");
+    background-repeat: repeat-y;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+body {
+    margin-left: 240px; 
+    font-size: 28px;
+    padding: 0px 10px;
+    color: gray;
+    background-image: linear-gradient(black, blue);
+    
+}
+audio { display:none;}

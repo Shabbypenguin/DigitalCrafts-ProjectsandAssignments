@@ -1,9 +1,9 @@
 [
   {
-    "table_number": 1,
-    "occupied": true,
+    "table_number": 0,
+    "occupied": false,
     "start_time": "07/14 14:51",
-    "end_time": ""
+    "end_time": "07/18 12:09"
   },
   {
     "table_number": 1,
