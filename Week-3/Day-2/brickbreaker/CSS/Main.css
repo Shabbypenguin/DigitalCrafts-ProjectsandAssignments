@@ -4,7 +4,7 @@ body{
     font-size: 24px;
 }
 #score{
-    padding-left: 28%;
+    padding-left: 630px;
     padding-top: 10px;
     text-align: justify;
 }
@@ -12,7 +12,7 @@ body{
     width: 150px;
     height: 20px;
     background: white;
-    margin-top: 40%;
+    margin-top: 90%;
     margin-left: 40%;
 }
 #ball{
@@ -22,7 +22,7 @@ body{
     margin: 8px;
 }
 #outside-border{
-    width: 29%;
+    width: 710px;
     height:100%;
     background-color: black;
     margin-top:20px;
@@ -34,77 +34,42 @@ body{
     position: fixed;
 }
 #blue-rectangle{
-    width: 5%;
-    height: 15px;
-    background-color: blue;
-    color:blue;
-    border:solid thick;
-    border-width:3px; 
-    padding-left:5px; 
-    padding-right:5px; 
-    padding-top:6px;
-    padding-bottom:6px;
-    margin:1px;
+    width: 51px;
+    height: 20px;
+    background: blue;
+    margin: 1px;
     display: inline-block;
     position: relative;
 }
 #red-rectangle{
-    width:5%;
-    height: 15px;
-    background-color: red;
-    color:red;
-    border:solid thick;
-    border-width:3px; 
-    padding-left:5px; 
-    padding-right:5px; 
-    padding-top:6px;
-    padding-bottom:6px;
-    margin:1px;
+    width: 51px;
+    height: 20px;
+    background: red;
+    margin: 1px;
     display: inline-block;
     position: relative;
 }
 #yellow-rectangle{
-    width:5%;
-    height: 15px;
-    background:yellow;
-    color: yellow;
-    border:solid thick;
-    border-width:3px; 
-    padding-left:5px; 
-    padding-right:5px; 
-    padding-top:6px;
-    padding-bottom:6px;
-    margin:1px;
+    width: 51px;
+    height: 20px;
+    background: yellow;
+    margin: 1px;
     display: inline-block;
     position: relative;
 }
 #blank-rectangle{
-    width:5%;
-    height: 15px;
-    background:black;
-    color:black;
-    border:solid thick;
-    border-width:3px; 
-    padding-left:5px; 
-    padding-right:5px; 
-    padding-top:6px;
-    padding-bottom:6px;
-    margin:1px;
+    width: 51px;
+    height: 20px;
+    background: black;
+    margin: 1px;
     display: inline-block;
     position: relative;
 }
 #green-rectangle{
-    width:5%;
-    height: 15px;
-    background:green;
-    color:green;
-    border:solid thick;
-    border-width:3px; 
-    padding-left:5px; 
-    padding-right:5px; 
-    padding-top:6px;
-    padding-bottom:6px;
-    margin:1px;
+    width: 51px;
+    height: 20px;
+    background: green;
+    margin: 1px;
     display: inline-block;
     position: relative;
 }
