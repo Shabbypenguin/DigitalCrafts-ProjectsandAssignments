@@ -1,0 +1,191 @@
+
+body 
+{
+    font-family:Georgia;
+}
+
+
+
+
+.add_comment 
+{
+     background-color:#33664D;  
+    border-radius:15px;
+    text-align:left;
+    color:White;
+    font-weight:bold;
+    padding:5px 5px 5px 5px;
+    
+}
+
+#menu li 
+{
+    list-style:none; 
+}
+
+
+.date_published 
+{
+    font-size:10px;
+}
+
+
+
+.categories_title
+{
+      background-color:#33664D;  
+    border-radius:15px;
+    -moz-border-radius: 15px;
+    text-align:center;
+    color:White;
+    font-weight:bold;
+    padding:5px 5px 5px 5px;
+    
+}
+
+.latest_articles
+{
+    background-color:#33664D;  
+    border-radius:15px;
+    -moz-border-radius: 15px;
+    text-align:left;
+    color:White;
+    font-weight:bold;
+    padding:5px 5px 5px 5px;
+}
+
+.article_title
+{
+    background-color:#33664D;  
+    border-radius:15px;
+    -moz-border-radius: 15px;
+    text-align:left;
+    color:White;
+    font-weight:bold;
+    padding:5px 5px 5px 5px;
+    font-size:16px;
+}
+
+label 
+{
+   
+    display:block;
+}
+
+li 
+{
+    list-style-type:none;
+}
+
+
+
+
+
+
+.latest_article
+{
+    margin:10px 0px 10px 0px; 
+}
+
+a 
+{
+    text-decoration:none;
+}
+
+a:hover 
+{
+    text-decoration:underline;
+}
+
+.iOS_Apps_Title
+{
+    background-color:#33664D;  
+    border-radius:15px;
+    -moz-border-radius: 15px;
+    text-align:center;
+    color:White;
+    font-weight:bold;
+    padding:5px 5px 5px 5px;
+    font-size:16px;
+}
+
+
+
+
+
+/* CSS Document */
+
+
+#wrapper1 {
+	position:relative;
+	text-align:left;
+	width:100%;
+	background:#FFF url("../images/rightcolor_bg.gif") repeat-y top right;
+	}
+#wrapper2 {
+	position:relative;
+	text-align:left;
+	width:100%;
+	background:url("../images/leftcolor_bg.gif") repeat-y top left;
+	}
+#header {
+	
+	padding:0px;
+	margin:0;
+	text-align:left;
+	
+	}
+
+#maincol {
+	position:relative;
+	margin:0;
+	padding:10px;
+	}
+#leftcol { 
+	position:relative;
+	top:-10px;
+	left:-10px;
+	float:left;
+	width:220px;  /* for IE5/WIN */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:200px; /* actual value */
+	margin:0 0 -10px 0;
+	padding:10px;
+	
+	z-index:100;
+	}
+#rightcol {
+	position:relative;
+	top:-10px;
+	right:-10px;
+	float:right;
+	width:220px;  /* for IE5/WIN */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:200px; /* actual value */
+	margin:0 0 -10px 0;
+	padding:10px;
+	
+	z-index:99;
+	}
+#centercol {
+	position:relative;
+	padding:0 240px;
+	}
+
+
+#footer {
+	position:relative;
+	top:1px;
+	
+	width:100%;
+	clear:both;
+	margin:0;
+	padding:1% 0;
+	text-align:center;
+	color:#CCC;
+	}
+
+
+
