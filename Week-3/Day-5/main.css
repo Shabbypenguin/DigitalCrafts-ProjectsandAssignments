@@ -1,0 +1,51 @@
+#container{
+	display: flex;
+	background-color: aqua;
+	padding: 10px;
+	flex-direction: column;
+}
+header{
+	color: white;
+	padding: 10px;
+	text-align: center;
+	background-color: teal;
+}
+#content{
+	display: flex;
+	background-color: yellow;
+	height: 300px;
+}
+aside{
+	background-color: green;
+	flex-grow: 1;
+	margin: 10px;
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+article{
+	background-color: orange;
+	flex-grow: 4;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+.image{
+	background-color: purple;
+	margin: 10px;
+	padding: 20px;
+	color: white;
+}
+#images{
+	display: flex;
+}
+footer{
+	color: white;
+	padding: 10px;
+	text-align: center;
+	background-color: teal;	
+}
