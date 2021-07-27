@@ -1,0 +1,20 @@
+.taskcontainer{
+	display: flex;
+}
+#todoList{
+}
+#completeList{
+}
+.checkmate{
+	margin-right: 70px;
+}
+.deleteMe{
+	margin-left: 70px;
+}
+.taskbox{
+	list-style-type: none;
+	color: white;
+	background-color: teal;
+	margin-bottom: 20px;
+	padding: 20px;
+}

@@ -10,5 +10,5 @@ function addImage() {
 	imageSpot.src = urlString.value
 	listItem.appendChild(imageSpot)
 	
-	document.querySelector('ul').appendChild(listItem)
+	namesUL.appendChild(listItem)
 }
