@@ -1,0 +1,40 @@
+#menuitem{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+#navbar{
+	display: flex;
+	align-content: 	center;
+}
+#starters{
+	list-style: none;
+	display: flex;
+}
+#entrees{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+}
+#desserts{
+	display: flex;
+	list-style: none;
+}
+.headers{
+	font-weight: bolder;
+	text-align: center;
+	font-size: x-large;
+}
+.recipeimage{
+	min-width: 100px;
+	width: 50%;
+}
+.tastyDish{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.description{
+	text-align: center;
+	max-width: 40%;
+}
