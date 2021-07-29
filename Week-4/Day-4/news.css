@@ -1,0 +1,31 @@
+.articleImage{
+	min-width: 100px;
+	max-width: 400px;
+	max-height: 300px;
+}
+#newsContainer{
+	display: flex;
+}
+#newsArticles{
+	display: flex;
+	flex-wrap: wrap;
+}
+.articleCon{
+	max-width: 50%;
+	min-width: 400px;
+	flex-wrap: wrap;
+	margin: 2%;
+}
+.article{
+	list-style: none;
+	font-size: x-large;
+	font-weight: bolder;
+	max-width: 800px;
+}
+.description{
+	font-size: large;
+}
+.author{
+	font-size: 12px;
+	font-style: italic;
+}
