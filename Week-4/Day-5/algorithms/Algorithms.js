@@ -4,7 +4,7 @@ const wordArr1 = ['dog', 'cat', 'fish', 'mango', 'ping', 'pong']const wordArr2 
 let combined = []
 
 for (i=0; i<=wordArr1.length; i++){
-    if(wordArr2.indexOf(wordArr1[i]) > -1){
+    if (wordArr2.indexOf(wordArr1[i]) > -1){
         combined.push(wordArr1[i])
     }
 }
