@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<pre>
+First Name: <input type="text" placeholder="First Name" required pattern="^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$">
+Last Name:  <input type="text" placeholder="Last Name" required pattern="^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$">
+Email: 	    <input placeholder="Email" required pattern="^([a-zA-Z0-9]+(?:[.-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:[.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,7})$">
+Password:   <input id="passwordBox" type="password" placeholder="Password" required> <input type="checkbox" onclick="showPassword()"> Show Password
+			<button>Submit</button></pre>
+		</form>
+		<script src="user-input.js"></script>
+	</body>
+</html>
