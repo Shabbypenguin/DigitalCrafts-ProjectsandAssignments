@@ -29,7 +29,7 @@ document.getElementById("BiggerTwoNumbers").innerHTML = answer
 const numArr2 = [10, 43, 64, 13, 12, 1, 67, 81, 51]
 
 const maxnumber1 = getMax(numArr2)
-const filteredTemp2 = removeMax(numArr1, maxnumber1)
+const filteredTemp2 = removeMax(numArr2, maxnumber1)
 const maxnumber2 = getMax(filteredTemp2)
 const filteredTemp3 = removeMax(filteredTemp2, maxnumber2)
 const maxnumber3 = getMax(filteredTemp3)

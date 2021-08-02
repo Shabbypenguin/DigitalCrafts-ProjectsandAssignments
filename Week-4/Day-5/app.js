@@ -9,3 +9,7 @@ window.setInterval(function () {
 		i=0
 	}
 }, 2000)
+
+window.setInterval(function () {
+	window.alert("Hello!")
+}, 4000)

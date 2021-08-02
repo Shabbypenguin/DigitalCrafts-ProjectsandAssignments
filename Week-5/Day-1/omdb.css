@@ -1,0 +1,17 @@
+.movielist{
+	display: flex;
+	flex-direction: row;
+}
+#movielisting{
+	display: flex;
+	flex-direction: row;
+}
+.moviebox{
+	display: flex;
+}
+.moviedatalist{
+	list-style-type: none;
+}
+#movieinfo{
+	list-style-type: none;
+}
