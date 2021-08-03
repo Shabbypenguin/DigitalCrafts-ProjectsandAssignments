@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="coffeeBox">
+			<h2> Customers currently awaiting their orders</h2>
+
+			<input type="email" id="useremail" placeholder="Leave blank to get all orders" size=40px><button id="getorders">Get orders</button> <button id="deleteOrders">Delete users orders</button><br>
+			<ul id="coffeeOrderList">
+				
+			</ul>
+			<h3>Make new order:</h3>
+			<input type="email" id="orderemail" placeholder="Users email">
+			<input type="text" id="ordertype" placeholder="What do you want"><br>
+			<label for="size">Choose a size:</label>
+			<select id="ordersize">
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>
+			</select>
+			<input type="text" id="orderprice" placeholder="Price" readonly="readonly" value="3.99" size=16px>
+			<input type="submit" id="submitOrder">
+			<div id="orderstatus"></div>
+
+
+		</div>
+		<script src="coffeeorders.js"></script>
+	</body>
+</html>

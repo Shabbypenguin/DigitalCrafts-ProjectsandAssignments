@@ -1,17 +1,17 @@
-.movielist{
+#movielist{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.movielisting{
 	display: flex;
 	flex-direction: row;
+	width: 100px;
+	height: 300px;
+	margin: 10px;
+
+
 }
-#movielisting{
+#moviebox{
 	display: flex;
-	flex-direction: row;
-}
-.moviebox{
-	display: flex;
-}
-.moviedatalist{
-	list-style-type: none;
-}
-#movieinfo{
-	list-style-type: none;
 }
