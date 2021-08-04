@@ -52,10 +52,10 @@ function deleteCoffeeOrders(useremail) {
             if (this.readyState === 4) {
                 alert(useremail.value + "'s order was deleted!")
                 usersEmail.value = ""
+                getCoffeeOrders(usersEmail)
             }
         })
         deleteorder.send()
-        å
     }
 }
 
@@ -65,18 +65,23 @@ function getCoffeeOrders(useremail) {
     coffeeorders.addEventListener("load", function() {
         if (this.readyState === 4) {
             let orderInfo = JSON.parse(this.responseText)
-            if (useremail.value) {
-                orderList.innerHTML = `User ${orderInfo["email"]}'s order is that they want a ${orderInfo.size} ${orderInfo.type}. It will cost them ${orderInfo.price}`
-            } else {
-                let currentOrders = orderInfo.map(function(order) {
-                    return `<li><a href="#" onclick="document.getElementById('useremail').value='${order.email}';">${order.email}</a> 
-				<ul><li>${order.size} ${order.type}</li></ul></li>`
-                })
-                orderList.innerHTML = currentOrders.join("")
-            }
+            printOrders(orderInfo, useremail)
         }
     })
     coffeeorders.send()
+}
+
+function printOrders(orderInfo, useremail) {
+    if (useremail.value) {
+        orderList.innerHTML = `User ${orderInfo["email"]}'s order is that they want a ${orderInfo.size} ${orderInfo.type}. It will cost them ${orderInfo.price}`
+    } else {
+        let currentOrders = orderInfo.map(function(order) {
+            return `<li><a href="#" onclick="document.getElementById('useremail').value='${order.email}';">${order.email}</a> 
+								<ul><li>${order.size} ${order.type}</li></ul>
+							</li>`
+        })
+        orderList.innerHTML = currentOrders.join("")
+    }
 }
 
 getOrders.addEventListener("click", function() {
