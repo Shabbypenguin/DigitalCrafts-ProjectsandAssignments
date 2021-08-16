@@ -9,7 +9,9 @@ async function getNewsStories() {
 function displayTheNews(articleInfo) {
 	let articledate = new Date(articleInfo.time * 1000)
 	let articleDetails = `
-		<a href="${articleInfo.url}"><h3>${articleInfo.title}</h3></a>
+		<a href="${articleInfo.url}">
+
+<h3>${articleInfo.title}</h3></a>
 		<h4>By: ${articleInfo.by} at ${articledate}<h4><br><br>`	
 	articleList.insertAdjacentHTML("beforeend", articleDetails)
 }
