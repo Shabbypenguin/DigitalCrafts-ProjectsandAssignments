@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <form method="POST" action="/add-customer">
+            <input type="text" name="name">
+            <input type="text" name= "age">
+            <button id="submit">Submit</button>
+        </form>
+        
+        <ul>
+            {{#customerlist}}
+            <li>
+                {{name}} age {{age}} was added to our database
+            </li>
+            {{/customerlist}}
+        </ul>
+
+    </body>
+</html>

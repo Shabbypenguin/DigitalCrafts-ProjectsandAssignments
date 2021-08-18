@@ -17,7 +17,7 @@ todosite.post('/todos', (req, res) =>{
   const priority = req.body.priority
   const task = {title: title, date: date, priority: priority }
   tasklist.push(task)
-  res.json(task)
+  res.json("success")
 })
 
 todosite.listen(3000, () =>  {
