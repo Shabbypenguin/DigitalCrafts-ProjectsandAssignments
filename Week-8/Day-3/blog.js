@@ -4,7 +4,7 @@ const session = require('express-session')
 const mustacheExpress = require('mustache-express')
 const sequelize = require("sequelize")
 var bcrypt = require('bcryptjs')
-const models = require('./models/')
+global.models = require('./models/')
 require('dotenv').config()
 
 
