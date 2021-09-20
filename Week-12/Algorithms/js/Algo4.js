@@ -1,6 +1,4 @@
-//let input = prompt("Please enter a number");
-
-let input = 10
+let input = prompt("Please enter a number");
 
 for(let i =1; i<input; i++){
 	if ((i % 3 == 0) && (i % 5 == 0)){
